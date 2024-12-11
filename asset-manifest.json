@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/maskiminigames/static/css/main.d0b5d69a.css",
-    "main.js": "/maskiminigames/static/js/main.ebd81026.js",
-    "static/js/453.29d6726e.chunk.js": "/maskiminigames/static/js/453.29d6726e.chunk.js",
-    "static/media/logo.svg": "/maskiminigames/static/media/logo.55afdb97a6d841f969516c65ebd69c3c.svg",
-    "static/media/endless_racing_logo.png": "/maskiminigames/static/media/endless_racing_logo.b77bc555e1d8d5444f5f.png",
-    "static/media/snake_logo.png": "/maskiminigames/static/media/snake_logo.916c837d43a6f7b9498a.png",
-    "static/media/endless_racing_button.png": "/maskiminigames/static/media/endless_racing_button.9fcac9ac9305ccf7111c.png",
-    "static/media/background_tile.png": "/maskiminigames/static/media/background_tile.757a0656277adbde5554.png",
-    "static/media/homepage_button.png": "/maskiminigames/static/media/homepage_button.486344fa75d4006f1c7e.png",
-    "static/media/snake_button.png": "/maskiminigames/static/media/snake_button.b0f3e07094b0a1d02c5b.png",
-    "static/media/help_button.png": "/maskiminigames/static/media/help_button.edc10466efd2aaf0e93c.png",
-    "static/media/RedCar.png": "/maskiminigames/static/media/RedCar.d38bb2c0d62dbf8675f1.png",
-    "static/media/GreenCar.png": "/maskiminigames/static/media/GreenCar.b247f8e2bb51b9094d5c.png",
-    "static/media/PinkCar.png": "/maskiminigames/static/media/PinkCar.98a3769838e5bee9140b.png",
-    "static/media/BlueCar.png": "/maskiminigames/static/media/BlueCar.649184d22120123ff6bd.png",
-    "static/media/BlackCar.png": "/maskiminigames/static/media/BlackCar.119722caccb6bcb6fee6.png",
-    "index.html": "/maskiminigames/index.html",
-    "main.d0b5d69a.css.map": "/maskiminigames/static/css/main.d0b5d69a.css.map",
-    "main.ebd81026.js.map": "/maskiminigames/static/js/main.ebd81026.js.map",
-    "453.29d6726e.chunk.js.map": "/maskiminigames/static/js/453.29d6726e.chunk.js.map"
+    "main.css": "/maskiminigames/index.js/static/css/main.418678ea.css",
+    "main.js": "/maskiminigames/index.js/static/js/main.a4a213e4.js",
+    "static/js/453.29d6726e.chunk.js": "/maskiminigames/index.js/static/js/453.29d6726e.chunk.js",
+    "static/media/logo.svg": "/maskiminigames/index.js/static/media/logo.55afdb97a6d841f969516c65ebd69c3c.svg",
+    "static/media/endless_racing_logo.png": "/maskiminigames/index.js/static/media/endless_racing_logo.b77bc555e1d8d5444f5f.png",
+    "static/media/snake_logo.png": "/maskiminigames/index.js/static/media/snake_logo.916c837d43a6f7b9498a.png",
+    "static/media/endless_racing_button.png": "/maskiminigames/index.js/static/media/endless_racing_button.9fcac9ac9305ccf7111c.png",
+    "static/media/background_tile.png": "/maskiminigames/index.js/static/media/background_tile.757a0656277adbde5554.png",
+    "static/media/homepage_button.png": "/maskiminigames/index.js/static/media/homepage_button.486344fa75d4006f1c7e.png",
+    "static/media/snake_button.png": "/maskiminigames/index.js/static/media/snake_button.b0f3e07094b0a1d02c5b.png",
+    "static/media/help_button.png": "/maskiminigames/index.js/static/media/help_button.edc10466efd2aaf0e93c.png",
+    "static/media/RedCar.png": "/maskiminigames/index.js/static/media/RedCar.d38bb2c0d62dbf8675f1.png",
+    "static/media/GreenCar.png": "/maskiminigames/index.js/static/media/GreenCar.b247f8e2bb51b9094d5c.png",
+    "static/media/PinkCar.png": "/maskiminigames/index.js/static/media/PinkCar.98a3769838e5bee9140b.png",
+    "static/media/BlueCar.png": "/maskiminigames/index.js/static/media/BlueCar.649184d22120123ff6bd.png",
+    "static/media/BlackCar.png": "/maskiminigames/index.js/static/media/BlackCar.119722caccb6bcb6fee6.png",
+    "index.html": "/maskiminigames/index.js/index.html",
+    "main.418678ea.css.map": "/maskiminigames/index.js/static/css/main.418678ea.css.map",
+    "main.a4a213e4.js.map": "/maskiminigames/index.js/static/js/main.a4a213e4.js.map",
+    "453.29d6726e.chunk.js.map": "/maskiminigames/index.js/static/js/453.29d6726e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0b5d69a.css",
-    "static/js/main.ebd81026.js"
+    "static/css/main.418678ea.css",
+    "static/js/main.a4a213e4.js"
   ]
 }
