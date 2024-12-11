@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/maskiminigames/static/css/main.d0b5d69a.css",
-    "main.js": "/maskiminigames/static/js/main.235abd3e.js",
+    "main.js": "/maskiminigames/static/js/main.c93c9622.js",
     "static/js/453.29d6726e.chunk.js": "/maskiminigames/static/js/453.29d6726e.chunk.js",
     "static/media/logo.svg": "/maskiminigames/static/media/logo.55afdb97a6d841f969516c65ebd69c3c.svg",
     "static/media/endless_racing_logo.png": "/maskiminigames/static/media/endless_racing_logo.b77bc555e1d8d5444f5f.png",
@@ -18,11 +18,11 @@
     "static/media/BlackCar.png": "/maskiminigames/static/media/BlackCar.119722caccb6bcb6fee6.png",
     "index.html": "/maskiminigames/index.html",
     "main.d0b5d69a.css.map": "/maskiminigames/static/css/main.d0b5d69a.css.map",
-    "main.235abd3e.js.map": "/maskiminigames/static/js/main.235abd3e.js.map",
+    "main.c93c9622.js.map": "/maskiminigames/static/js/main.c93c9622.js.map",
     "453.29d6726e.chunk.js.map": "/maskiminigames/static/js/453.29d6726e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0b5d69a.css",
-    "static/js/main.235abd3e.js"
+    "static/js/main.c93c9622.js"
   ]
 }
