@@ -30,8 +30,9 @@ const GameOver = ({ score, startGame }) => {
           />
           <button
             className={styles.button}
+            onClick={() => setTimeout(() => (window.location.href = "/"), 100)}
           >
-            <a href="/">BACK TO MENU</a>
+            BACK TO MENU
           </button>
         </div>
       </div>
