@@ -5,7 +5,7 @@ import CollisionManager from "./CollisionManager";
 import StartGameButton from "../StartGameButton";
 import HelpButton from "../HelpButton";
 import InstructionsText from "./InstructionsText";
-import GameOver from "../GameOver";
+import GameOver from "../GameOverPopup";
 import { MAP_WIDTH, MAP_HEIGHT } from "./Constants";
 
 // Used to center all of the components that are a part of the game

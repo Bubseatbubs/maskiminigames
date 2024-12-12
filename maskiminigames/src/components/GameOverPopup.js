@@ -5,7 +5,8 @@ import "../styles/GameOver.css";
 
 import CloseButton from "./CloseButton.js";
 import ScoreDisplay from "./ScoreDisplay.js";
-import GameButtons from "./GameButtons.js";
+import BackToMenuButton from "./BackToMenuButton.js";
+import StartGameButton from "./StartGameButton.js";
 
 /**
  * @component GameOver
@@ -20,14 +21,15 @@ const GameOver = ({ score, startGame }) => {
   const handleClose = () => {
     setIsVisible(false);
   };
-  
+
   if (!isVisible) return null;
   return (
     <div className={styles.overlay}>
       <div className="game-over">
         <CloseButton onClick={handleClose} />
         <ScoreDisplay score={score} />
-        <GameButtons startGame={startGame} />
+        <StartGameButton startGame={startGame} text="RESTART"/>
+        <BackToMenuButton />
       </div>
     </div>
   );
