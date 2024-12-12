@@ -20,8 +20,8 @@ const EndlessRacingGamePage = () => {
   };
 
   const navigationButtons = [
-    { link: "/", imageSrc: homepageButtonImage, altText: "Go Home" },
-    { link: "/snake", imageSrc: snakeButtonImage, altText: "Play Snake" }
+    { link: "/#/", imageSrc: homepageButtonImage, altText: "Go Home" },
+    { link: "/#/snake", imageSrc: snakeButtonImage, altText: "Play Snake" }
   ];
 
   return <GamePage game={game} navigationButtons={navigationButtons} />;
