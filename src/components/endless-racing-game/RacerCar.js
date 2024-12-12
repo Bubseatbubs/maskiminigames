@@ -24,6 +24,7 @@ const INITIAL_MAX_OFFSET = MAP_HEIGHT / 1.2;
 const VERTICAL_SPEED_VARIANCE = 0.5;
 const HORIZONTAL_SPEED_VARIANCE = 0.05;
 const LOSS_IN_VELOCITY_UPON_COLLISION = 0.9;
+const ACCELERATION_INTERVAL = 0.05;
 const MAX_SPEED = -50;
 
 /**
@@ -147,7 +148,11 @@ class RacerCar extends Component {
     Accelerate the racer, making them go faster backwards
   */
   accelerate = () => {
-    CarUtils.decelerate(this, MAX_SPEED);
+    if (this.state.verticalSpeed > MAX_SPEED) {
+      this.setState({
+        verticalSpeed: this.state.verticalSpeed - ACCELERATION_INTERVAL
+      })
+    }
   };
 
   update = () => {

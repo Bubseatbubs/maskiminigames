@@ -107,7 +107,7 @@ class EndlessRacingGameManager extends Component {
   };
 
   accelerateGame = () => {
-    // We decelerate the racer cars to make the player car appear faster
+    // Accelerate all the racer cars
     this.racerRefs.forEach((racerRef) => racerRef.current.accelerate());
   };
 
