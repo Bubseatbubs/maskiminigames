@@ -8,12 +8,15 @@ import styles from "../styles/Styles.module.css";
  * @date December 2024
  */
 const BackToMenuButton = () => {
-  
+
   const buttonText = "BACK TO MENU";
-  
+
   return (
-    <button className={styles.button}>
-      <a href="/maskiminigames/#/">{buttonText}</a>
+    <button
+      className={styles.button}
+      onClick={() => { window.location.href = "/maskiminigames/#/"; }}
+    >
+      BACK TO MENU
     </button>
   );
 };
