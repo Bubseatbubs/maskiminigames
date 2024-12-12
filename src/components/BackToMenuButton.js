@@ -12,8 +12,11 @@ const BackToMenuButton = () => {
   const buttonText = "BACK TO MENU";
   
   return (
-    <button className={styles.button}>
-      <a href="/">{buttonText}</a>
+    <button
+      className={styles.button}
+      onClick={() => { window.location.href = "/"; }}
+    >
+      BACK TO MENU
     </button>
   );
 };
