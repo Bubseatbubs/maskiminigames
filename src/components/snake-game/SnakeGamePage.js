@@ -20,8 +20,8 @@ const SnakeGamePage = () => {
   };
 
   const navigationButtons = [
-    { link: "/", imageSrc: homepageButtonImage, altText: "Go Home" },
-    { link: "/endless-racing", imageSrc: endlessRacingButtonImage, altText: "Play Snake" }
+    { link: "/#/", imageSrc: homepageButtonImage, altText: "Go Home" },
+    { link: "/#/endless-racing", imageSrc: endlessRacingButtonImage, altText: "Play Snake" }
   ];
 
   return <GamePage game={game} navigationButtons={navigationButtons} />;
