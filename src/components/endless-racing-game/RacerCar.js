@@ -148,6 +148,7 @@ class RacerCar extends Component {
     Accelerate the racer, making them go faster backwards
   */
   accelerate = () => {
+    // Limit max speed of the racer so they don't speed up infinitely
     if (this.state.verticalSpeed > MAX_SPEED) {
       this.setState({
         verticalSpeed: this.state.verticalSpeed - ACCELERATION_INTERVAL
