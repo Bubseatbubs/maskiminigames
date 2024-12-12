@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../logo.svg';
 import snakeButtonImage from '../assets/snake_button.png';
 import endlessRacingButtonImage from '../assets/endless_racing_button.png';
-import Button from './Button';
+import PageRedirectButton from './PageRedirectButton.js';
 import styles from '../styles/Styles.module.css';
 
 /**
@@ -18,12 +18,12 @@ const Homepage = () => {
     <header className={styles.page}>
       <img src={logo} className={styles.logo} alt="logo" />
       <div className={styles.buttons}>
-        <Button
+        <PageRedirectButton
           link="/#/snake"
           imageSrc={snakeButtonImage}
           altText="Play Snake"
         />
-        <Button
+        <PageRedirectButton
           link="/#/endless-racing"
           imageSrc={endlessRacingButtonImage}
           altText="Play Endless Racing"
