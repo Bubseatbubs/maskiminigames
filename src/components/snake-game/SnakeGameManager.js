@@ -9,7 +9,7 @@ import {
   DIRECTIONS,
   ALLOWED_KEYCODES,
 } from "./constants";
-import GameOver from "../GameOver";
+import GameOver from "../GameOverPopup";
 import StartGameButton from "../StartGameButton";
 import HelpButton from "../HelpButton";
 import InstructionsText from "./InstructionsText";

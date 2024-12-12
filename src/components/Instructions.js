@@ -6,11 +6,9 @@ import '../styles/Instructions.css';
 /**
  * @component Instructions
  * @description Formatted instructions
- * 
  * @author Ayleen Piteo-Tarpy
  * @date December 2024
  */
-
 const Instructions = ({ content, onClose }) => (
   <div className={styles.overlay}>
     <div className="instructions-box">
