@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import helpButtonImage from "../assets/help_button.png";
-import Instructions from './Instructions';
-import '../styles/HelpButton.css';
+import Instructions from "./Instructions";
+import "../styles/HelpButton.css";
 
 /**
  * @component HelpButton
  * @description A button component with a press animation that displays given
  * instructions.
- * 
+ *
  * @author Ayleen Piteo-Tarpy
  * @date December 2024
  */
@@ -24,11 +24,21 @@ const HelpButton = ({ instructions }) => {
 
   return (
     <>
-      <button className="help-button" onClick={displayInstructions}>
-        <img className="help-button-image" src={helpButtonImage} alt="Help" />
+      <button
+        className="help-button"
+        onClick={displayInstructions}
+      >
+        <img
+          className="help-button-image"
+          src={helpButtonImage}
+          alt="Help"
+        />
       </button>
       {showInstructions && (
-        <Instructions content={instructions} onClose={closeInstructions} />
+        <Instructions
+          content={instructions}
+          onClose={closeInstructions}
+        />
       )}
     </>
   );

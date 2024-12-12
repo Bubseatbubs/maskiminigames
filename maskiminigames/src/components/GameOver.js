@@ -1,40 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import StartGameButton from "./StartGameButton";
-import styles from '../styles/Styles.module.css';
+import styles from "../styles/Styles.module.css";
 import "../styles/GameOver.css";
-
 /**
  * @component GameOver
  * @description Game Over Popup UI Component
  * @author Khushmeet Gobindpuri, Ayleen Piteo-Tarpy
  * @date December 2024
  */
-const GameOver = ({ score, startGame }) => {
+
+const GameOver = ({ score, startGame, handleClose }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClose = () => {
     setIsVisible(false);
   };
-
+  
   if (!isVisible) return null;
   return (
     <div className={styles.overlay}>
       <div className="game-over">
-        <button className="close-button" onClick={handleClose}>×</button>
-        <h1>GAME OVER!!!</h1>
-        <h2>{"FINAL SCORE: " + score}</h2>
-        <div className="buttons">
-          <StartGameButton
-            startGame={startGame}
-            text={"RESTART"}
-          />
-          <button
-            className={styles.button}
-            onClick={() => setTimeout(() => (window.location.href = "/"), 100)}
-          >
-            BACK TO MENU
-          </button>
-        </div>
+        <CloseButton onClick={handleClose} />
+        <ScoreDisplay score={score} />
+        <GameButtons startGame={startGame} />
       </div>
     </div>
   );
