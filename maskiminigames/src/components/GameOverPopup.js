@@ -28,8 +28,13 @@ const GameOver = ({ score, startGame }) => {
       <div className="game-over">
         <CloseButton onClick={handleClose} />
         <ScoreDisplay score={score} />
-        <StartGameButton startGame={startGame} text="RESTART"/>
-        <BackToMenuButton />
+        <div className="buttons">
+          <StartGameButton
+            startGame={startGame}
+            text="RESTART"
+          />
+          <BackToMenuButton />
+        </div>
       </div>
     </div>
   );
