@@ -97,17 +97,6 @@ class RacerCar extends Component {
   };
 
   /*
-    Accelerate or decelerate the speed of the player
-    */
-  accelerate = () => {
-    CarUtils.accelerate(this, MAX_SPEED);
-  };
-
-  decelerate = () => {
-    CarUtils.decelerate(this, MIN_SPEED);
-  };
-
-  /*
     Check for collision with track edges or other racers
     */
   collisionCheck = (racerRefs) => {

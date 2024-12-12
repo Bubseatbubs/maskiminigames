@@ -64,11 +64,15 @@ class PlayerCar extends Component {
     }
 
     slowdownHorizontalSpeed = () => {
-        this.state.horizontalSpeed = HORIZONTAL_SPEED / 2;
+        this.setState({
+            horizontalSpeed: HORIZONTAL_SPEED / 2
+        });
     }
 
     resetHorizontalSpeed = () => {
-        this.state.horizontalSpeed = HORIZONTAL_SPEED;
+        this.setState({
+            horizontalSpeed: HORIZONTAL_SPEED
+        });
     }
 
     // Render out the racer
