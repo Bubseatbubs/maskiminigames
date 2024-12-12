@@ -13,7 +13,7 @@ const BackToMenuButton = () => {
   
   return (
     <button className={styles.button}>
-      <a href="/maskiminigames">{buttonText}</a>
+      <a href="/maskiminigames/">{buttonText}</a>
     </button>
   );
 };
