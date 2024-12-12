@@ -92,7 +92,7 @@ class CollisionManager {
         for (let racerRef of racerRefs) {
             if (!racerRef?.current) continue;
             let racerCar = racerRef.current;
-            if (curRacer == racerCar) continue;
+            if (curRacer === racerCar) continue;
 
             let xOffset = this.checkXOffsetOfCollision(curRacer, racerCar);
             if (xOffset != null) {

@@ -1,8 +1,6 @@
 import { MAP_WIDTH, IMAGE_HEIGHT, IMAGE_WIDTH } from './Constants'
 import React from 'react';
 
-const ACCELERATION_INTERVAL = 0.05;
-
 /**
  * @class CarUtils
  * @description Contains common functions used between both the player and
@@ -43,26 +41,7 @@ export const CarUtils = {
             leftEdge: 0,
             rightEdge: MAP_WIDTH - instance.width
         };
-    },
-
-    /*
-    Accelerate or decelerate the speed of a car
-    */
-    accelerate(instance, maxSpeed) {
-        if (instance.state.verticalSpeed < maxSpeed) {
-            instance.setState({
-                verticalSpeed: instance.state.verticalSpeed + ACCELERATION_INTERVAL
-            })
-        }
-    },
-
-    decelerate(instance, minSpeed) {
-        if (instance.state.verticalSpeed > minSpeed) {
-            instance.setState({
-                verticalSpeed: instance.state.verticalSpeed - ACCELERATION_INTERVAL
-            })
-        }
-    },
+    }
 }
 
 export default CarUtils;
