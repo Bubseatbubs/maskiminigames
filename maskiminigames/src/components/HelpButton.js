@@ -7,7 +7,6 @@ import "../styles/HelpButton.css";
  * @component HelpButton
  * @description A button component with a press animation that displays given
  * instructions.
- *
  * @author Ayleen Piteo-Tarpy
  * @date December 2024
  */

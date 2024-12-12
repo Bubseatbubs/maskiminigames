@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 import '../styles/Button.css';
 
 /**
- * @component Button
+ * @component PageRedirectButton
  * @description A button component with a press animation that redirects
  * to a given link
- * 
  * @author Ayleen Piteo-Tarpy
  * @date December 2024
  */
-const Button = ({ link, imageSrc, altText }) => {
+const PageRedirectButton = ({ link, imageSrc, altText }) => {
   const redirect = () => {
     setTimeout(() => {
       window.location.href = link;
@@ -24,10 +23,10 @@ const Button = ({ link, imageSrc, altText }) => {
   );
 };
 
-Button.propTypes = {
+PageRedirectButton.propTypes = {
   link: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,
 };
 
-export default Button;
+export default PageRedirectButton;

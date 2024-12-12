@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-
-import styles from "../styles/Styles.module.css";
-import "../styles/GameOver.css";
-
 import CloseButton from "./CloseButton.js";
 import ScoreDisplay from "./ScoreDisplay.js";
 import BackToMenuButton from "./BackToMenuButton.js";
 import StartGameButton from "./StartGameButton.js";
+import styles from "../styles/Styles.module.css";
+import "../styles/GameOver.css";
 
 /**
  * @component GameOver
  * @description Game Over Popup UI Component
- * @author Khushmeet Gobindpuri, Ayleen Piteo-Tarpy
+ * @author Khushmeet Gobindpuri, Ayleen Piteo-Tarpy, Shaun Cushman
  * @date December 2024
  */
 
