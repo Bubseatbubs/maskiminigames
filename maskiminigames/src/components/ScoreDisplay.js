@@ -16,3 +16,5 @@ const ScoreDisplay = ({ score }) => {
 ScoreDisplay.propTypes = {
   score: PropTypes.number.isRequired,
 };
+
+export default ScoreDisplay;

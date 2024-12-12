@@ -1,7 +1,12 @@
 import React, { useState } from "react";
-import StartGameButton from "./StartGameButton";
+
 import styles from "../styles/Styles.module.css";
 import "../styles/GameOver.css";
+
+import CloseButton from "./CloseButton.js";
+import ScoreDisplay from "./ScoreDisplay.js";
+import GameButtons from "./GameButtons.js";
+
 /**
  * @component GameOver
  * @description Game Over Popup UI Component
@@ -9,7 +14,7 @@ import "../styles/GameOver.css";
  * @date December 2024
  */
 
-const GameOver = ({ score, startGame, handleClose }) => {
+const GameOver = ({ score, startGame }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClose = () => {

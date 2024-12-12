@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import StartGameButton from "./StartGameButton";
-import styles from "../../styles/PageStyles.module.css";
+import styles from "../styles/Styles.module.css";
 
 const GameButtons = ({ startGame }) => {
   const menuRedirectHeader = "BACK TO MENU";
