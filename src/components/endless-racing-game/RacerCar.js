@@ -24,8 +24,8 @@ const INITIAL_MAX_OFFSET = MAP_HEIGHT / 1.2;
 const VERTICAL_SPEED_VARIANCE = 0.5;
 const HORIZONTAL_SPEED_VARIANCE = 0.05;
 const LOSS_IN_VELOCITY_UPON_COLLISION = 0.9;
-const MIN_SPEED = -50;
-const MAX_SPEED = 50;
+const ACCELERATION_INTERVAL = 0.05;
+const MAX_SPEED = -50;
 
 /**
  * @class Racer
@@ -78,6 +78,10 @@ class RacerCar extends Component {
   // Additionally modifies the horizontal position of the car
   randomizeCarState = () => {
     this.setState({
+      x: this.randomNumberInRange(
+        this.trackEdges.leftEdge,
+        this.trackEdges.rightEdge
+      ),
       verticalSpeed:
         this.state.verticalSpeed +
         this.randomNumberInRange(
@@ -94,17 +98,6 @@ class RacerCar extends Component {
 
     this.imageIndex = this.randomNumberInRange(0, RACE_CAR_IMAGES.length - 1);
     this.raceCarImage = RACE_CAR_IMAGES[this.imageIndex];
-  };
-
-  /*
-    Accelerate or decelerate the speed of the player
-    */
-  accelerate = () => {
-    CarUtils.accelerate(this, MAX_SPEED);
-  };
-
-  decelerate = () => {
-    CarUtils.decelerate(this, MIN_SPEED);
   };
 
   /*
@@ -152,14 +145,15 @@ class RacerCar extends Component {
   };
 
   /*
-    Accelerate or decelerate the speed of a racer
-    */
+    Accelerate the racer, making them go faster backwards
+  */
   accelerate = () => {
-    CarUtils.accelerate(this, MAX_SPEED);
-  };
-
-  decelerate = () => {
-    CarUtils.decelerate(this, MIN_SPEED);
+    // Limit max speed of the racer so they don't speed up infinitely
+    if (this.state.verticalSpeed > MAX_SPEED) {
+      this.setState({
+        verticalSpeed: this.state.verticalSpeed - ACCELERATION_INTERVAL
+      })
+    }
   };
 
   update = () => {
@@ -170,21 +164,8 @@ class RacerCar extends Component {
     });
 
     // Check if track was crossed
-    if (this.state.y < -MAP_HEIGHT) {
+    if (this.state.y > MAP_HEIGHT) {
       this.setState({
-        x: this.randomNumberInRange(
-          this.trackEdges.leftEdge,
-          this.trackEdges.rightEdge
-        ),
-        y: MAP_HEIGHT,
-      });
-      this.randomizeCarState();
-    } else if (this.state.y > MAP_HEIGHT) {
-      this.setState({
-        x: this.randomNumberInRange(
-          this.trackEdges.leftEdge,
-          this.trackEdges.rightEdge
-        ),
         y: -MAP_HEIGHT + IMAGE_HEIGHT,
       });
       this.randomizeCarState();
