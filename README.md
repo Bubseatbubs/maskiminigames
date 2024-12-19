@@ -9,7 +9,10 @@
 ## Introduction 
 MASKI Minigames is a website created in React that contains two popular games, Snake and Endless Racing!
 
-## Getting Started
+## To Play
+If you are looking to simply try out the project, go to [this website](https://bubseatbubs.github.io/maskiminigames) and start playing the games.
+
+## Compiling the Project
 1.	Install Node.js and NPM.
 2.	Make sure a **node_modules** folder has been generated under **maskiminigames**. If there isn't, execute `npm install` in the **maskiminigames** directory.
 3.	Navigate to **maskiminigames** and execute `npm start`.
